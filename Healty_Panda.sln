@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Healty_Panda", "Healty_Panda.csproj", "{64703BAC-7C2A-4E28-BFC9-2EB02AAA14EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64703BAC-7C2A-4E28-BFC9-2EB02AAA14EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64703BAC-7C2A-4E28-BFC9-2EB02AAA14EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64703BAC-7C2A-4E28-BFC9-2EB02AAA14EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64703BAC-7C2A-4E28-BFC9-2EB02AAA14EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A83FD949-4211-442B-BC63-74535DE9A918}
+	EndGlobalSection
+EndGlobal
