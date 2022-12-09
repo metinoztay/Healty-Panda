@@ -109,6 +109,7 @@
             this.btnManagement.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnManagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnManagement.UseVisualStyleBackColor = true;
+            this.btnManagement.Visible = false;
             this.btnManagement.Click += new System.EventHandler(this.btnManagement_Click);
             // 
             // btnAccounting
@@ -130,6 +131,7 @@
             this.btnAccounting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAccounting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAccounting.UseVisualStyleBackColor = true;
+            this.btnAccounting.Visible = false;
             this.btnAccounting.Click += new System.EventHandler(this.btnAccounting_Click);
             // 
             // btnProducts
