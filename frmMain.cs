@@ -34,7 +34,7 @@ namespace Healty_Panda
         private void MainForm_Load(object sender, EventArgs e)
         {
             connection.Open();
-            command = new SqlCommand("SELECT Name,Surname,Authority FROM Users WHERE ID='" + userID + "'", connection);
+            command = new SqlCommand("SELECT Name,Surname,Authority FROM Tbl_Users WHERE ID='" + userID + "'", connection);
             dataReader = command.ExecuteReader();
             while (dataReader.Read())
             {

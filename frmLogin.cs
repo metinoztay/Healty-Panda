@@ -123,7 +123,7 @@ namespace Healty_Panda
             {
                 try
                 {
-                    SqlCommand command = new SqlCommand("Select *From Users where ID=@userID AND Password=@userPassword", connection);
+                    SqlCommand command = new SqlCommand("Select *From Tbl_Users where ID=@userID AND Password=@userPassword", connection);
                     command.Parameters.AddWithValue("@userID", txtUserID.Text);
                     command.Parameters.AddWithValue("@userPassword", txtUserPassword.Text);
                     SqlDataReader reader = command.ExecuteReader();
