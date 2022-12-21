@@ -161,6 +161,11 @@ namespace Healty_Panda
 
         }
 
+        private void panelLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void btnManagement_Click(object sender, EventArgs e)
         {
             GetForm(new frmManagement());

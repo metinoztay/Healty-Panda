@@ -38,6 +38,7 @@
             this.btnCustomers = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnShoppingCart = new System.Windows.Forms.Button();
             this.panelTopBar = new System.Windows.Forms.Panel();
@@ -45,10 +46,11 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.panelForm = new System.Windows.Forms.Panel();
             this.panelShoppingCart = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnComplete = new System.Windows.Forms.Button();
             this.timerShoppingCart = new System.Windows.Forms.Timer(this.components);
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTopBar.SuspendLayout();
             this.panelForm.SuspendLayout();
@@ -221,12 +223,24 @@
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelLogo.Controls.Add(this.pictureBox2);
             this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(220, 80);
             this.panelLogo.TabIndex = 0;
+            this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Healty_Panda.Properties.Resources.BRAND_NAME___Kopya;
+            this.pictureBox2.Location = new System.Drawing.Point(71, 15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(143, 53);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -306,7 +320,7 @@
             // panelShoppingCart
             // 
             this.panelShoppingCart.BackColor = System.Drawing.Color.Gainsboro;
-            this.panelShoppingCart.Controls.Add(this.button1);
+            this.panelShoppingCart.Controls.Add(this.btnComplete);
             this.panelShoppingCart.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelShoppingCart.Location = new System.Drawing.Point(1170, 80);
             this.panelShoppingCart.MaximumSize = new System.Drawing.Size(234, 658);
@@ -314,16 +328,16 @@
             this.panelShoppingCart.Size = new System.Drawing.Size(0, 658);
             this.panelShoppingCart.TabIndex = 3;
             // 
-            // button1
+            // btnComplete
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.Location = new System.Drawing.Point(0, 596);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(0, 62);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnComplete.BackColor = System.Drawing.Color.Red;
+            this.btnComplete.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnComplete.Location = new System.Drawing.Point(0, 596);
+            this.btnComplete.Name = "btnComplete";
+            this.btnComplete.Size = new System.Drawing.Size(0, 62);
+            this.btnComplete.TabIndex = 0;
+            this.btnComplete.Text = "Complete";
+            this.btnComplete.UseVisualStyleBackColor = false;
             // 
             // timerShoppingCart
             // 
@@ -347,6 +361,7 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTopBar.ResumeLayout(false);
             this.panelForm.ResumeLayout(false);
@@ -371,11 +386,11 @@
         private Panel panelLogout;
         private Button btnLogout;
         private Button btnUserID;
-        private PictureBox pictureBox2;
         private Button btnClose;
         private Button btnShoppingCart;
         private Panel panelShoppingCart;
         private System.Windows.Forms.Timer timerShoppingCart;
-        private Button button1;
+        private Button btnComplete;
+        private PictureBox pictureBox2;
     }
 }
